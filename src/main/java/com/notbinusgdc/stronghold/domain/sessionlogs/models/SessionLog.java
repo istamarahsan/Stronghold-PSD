@@ -1,4 +1,4 @@
-package com.binusgdc.strongholde.bgdc.sessionlogs.models;
+package com.notbinusgdc.stronghold.domain.sessionlogs.models;
 
 import java.time.Duration;
 import java.time.Instant;

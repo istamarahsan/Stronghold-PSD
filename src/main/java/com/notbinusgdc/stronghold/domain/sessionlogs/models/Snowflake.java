@@ -1,4 +1,4 @@
-package com.binusgdc.strongholde.bgdc.sessionlogs.models;
+package com.notbinusgdc.stronghold.domain.sessionlogs.models;
 
 public class Snowflake {
   private final long val;

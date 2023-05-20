@@ -1,13 +1,13 @@
-package com.binusgdc.strongholde.data;
+package com.notbinusgdc.stronghold.data;
 
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.MentorsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.SessionLogsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.StudentsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.TopicsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.Mentor;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.SessionLog;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.Snowflake;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.Student;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.MentorsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.SessionLogsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.StudentsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.TopicsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.Mentor;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.SessionLog;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.Snowflake;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.Student;
 import java.util.*;
 
 public class InMemory implements TopicsData, StudentsData, MentorsData, SessionLogsData {

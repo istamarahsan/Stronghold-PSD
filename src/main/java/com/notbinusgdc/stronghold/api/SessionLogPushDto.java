@@ -1,4 +1,4 @@
-package com.binusgdc.strongholde.api;
+package com.notbinusgdc.stronghold.api;
 
 public class SessionLogPushDto {
   public String topicId;

@@ -1,12 +1,12 @@
-package com.binusgdc.strongholde.bgdc.sessionlogs;
+package com.notbinusgdc.stronghold.domain.sessionlogs;
 
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.MentorsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.SessionLogsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.StudentsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.data.TopicsData;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.PushedSessionLog;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.SessionLog;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.Student;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.MentorsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.SessionLogsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.StudentsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.data.TopicsData;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.PushedSessionLog;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.SessionLog;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.Student;
 import java.util.stream.Collectors;
 
 public class SessionLogService {

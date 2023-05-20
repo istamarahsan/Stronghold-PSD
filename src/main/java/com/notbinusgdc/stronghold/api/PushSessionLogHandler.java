@@ -1,8 +1,8 @@
-package com.binusgdc.strongholde.api;
+package com.notbinusgdc.stronghold.api;
 
-import com.binusgdc.strongholde.bgdc.sessionlogs.SessionLogService;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.PushedSessionLog;
-import com.binusgdc.strongholde.bgdc.sessionlogs.models.Snowflake;
+import com.notbinusgdc.stronghold.domain.sessionlogs.SessionLogService;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.PushedSessionLog;
+import com.notbinusgdc.stronghold.domain.sessionlogs.models.Snowflake;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;

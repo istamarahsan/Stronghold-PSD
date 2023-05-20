@@ -1,8 +1,8 @@
-package com.binusgdc.strongholde;
+package com.notbinusgdc.stronghold;
 
-import com.binusgdc.strongholde.api.PushSessionLogHandler;
-import com.binusgdc.strongholde.bgdc.sessionlogs.SessionLogService;
-import com.binusgdc.strongholde.data.InMemory;
+import com.notbinusgdc.stronghold.api.PushSessionLogHandler;
+import com.notbinusgdc.stronghold.domain.sessionlogs.SessionLogService;
+import com.notbinusgdc.stronghold.data.InMemory;
 import io.javalin.Javalin;
 
 public class Stronghold {
