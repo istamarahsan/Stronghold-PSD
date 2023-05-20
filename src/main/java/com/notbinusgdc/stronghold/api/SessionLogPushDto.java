@@ -5,7 +5,7 @@ public class SessionLogPushDto {
   public String sessionTimeIso;
   public String durationIso;
   public String recorderName;
-  public String mentorDiscordUserId;
+  public String[] mentorDiscordUserIds;
   public Attendee[] attendees;
 
   public static class Attendee {

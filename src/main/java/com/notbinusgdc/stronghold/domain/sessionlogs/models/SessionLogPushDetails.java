@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
-public record SessionLog(
+public record SessionLogPushDetails(
     String topicId,
     Instant timeStarted,
     Duration duration,
