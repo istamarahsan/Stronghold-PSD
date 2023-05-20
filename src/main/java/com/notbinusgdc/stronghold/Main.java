@@ -12,7 +12,7 @@ public class Main {
             .map(
                 arg ->
                     switch (arg.toLowerCase()) {
-                      case "mysql" -> getMysqlConfig().get();
+                      case "mariadb" -> getMariadbConfig().get();
                       default -> throw new IllegalArgumentException(
                           "Unknown data source type '" + arg + "'");
                     })
@@ -23,16 +23,16 @@ public class Main {
     Stronghold.from(config).create().start(8080);
   }
 
-  private static Optional<StrongholdDataConfig> getMysqlConfig() {
+  private static Optional<StrongholdDataConfig> getMariadbConfig() {
     try {
-      var mySqlHost = Optional.ofNullable(System.getenv("MYSQLHOST")).get();
-      var mySqlPort = Integer.parseInt(Optional.ofNullable(System.getenv("MYSQLPORT")).get());
-      var mySqlUser = Optional.ofNullable(System.getenv("MYSQLUSER")).get();
-      var mySqlPassword = Optional.ofNullable(System.getenv("MYSQLPASSWORD")).get();
-      var mySqlDatabase = Optional.ofNullable(System.getenv("MYSQLDATABASE")).get();
+      var host = Optional.ofNullable(System.getenv("MARIADBHOST")).get();
+      var port = Integer.parseInt(Optional.ofNullable(System.getenv("MARIADBPORT")).get());
+      var user = Optional.ofNullable(System.getenv("MARIADBUSER")).get();
+      var password = Optional.ofNullable(System.getenv("MARIADBPASSWORD")).get();
+      var database = Optional.ofNullable(System.getenv("MARIADBDATABASE")).get();
       return Optional.of(
-          StrongholdDataConfig.mysql(
-              mySqlHost, mySqlPort, mySqlUser, mySqlPassword, mySqlDatabase));
+          StrongholdDataConfig.mariadb(
+              host, port, user, password, database));
     } catch (Exception e) {
       return Optional.empty();
     }

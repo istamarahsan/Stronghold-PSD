@@ -32,7 +32,7 @@ public sealed interface StrongholdDataConfig
     return new InMemory();
   }
 
-  static StrongholdDataConfig mysql(
+  static StrongholdDataConfig mariadb(
       String host, int port, String user, String password, String database) {
     return new Mariadb(host, port, user, password, database);
   }
