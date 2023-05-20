@@ -21,6 +21,7 @@ dependencies {
   implementation("org.jooq:jooq-codegen:$jooqVersion")
   implementation("org.jooq:jooq-meta:$jooqVersion")
   implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
+  implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.1")
   testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
   testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
