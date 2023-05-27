@@ -30,9 +30,7 @@ public class Main {
       var user = Optional.ofNullable(System.getenv("MARIADBUSER")).get();
       var password = Optional.ofNullable(System.getenv("MARIADBPASSWORD")).get();
       var database = Optional.ofNullable(System.getenv("MARIADBDATABASE")).get();
-      return Optional.of(
-          StrongholdDataConfig.mariadb(
-              host, port, user, password, database));
+      return Optional.of(StrongholdDataConfig.mariadb(host, port, user, password, database));
     } catch (Exception e) {
       return Optional.empty();
     }
