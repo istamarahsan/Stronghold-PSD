@@ -16,8 +16,11 @@ public class SessionLogService {
   }
 
   public SessionLog pushLog(SessionLogPushDetails sessionLogPushDetails) {
-    if (!topics.topicIdExists(sessionLogPushDetails.topicId())
-        || sessionLogs.sessionWithTopicExists(sessionLogPushDetails.topicId())
+    if (!topics.topicIdExists(sessionLogPushDetails.topicId())) {
+      throw new IllegalArgumentException(
+          "Topic with ID '" + sessionLogPushDetails.topicId() + "' not found");
+    }
+    if (sessionLogs.sessionWithTopicExists(sessionLogPushDetails.topicId())
         || sessionLogPushDetails.duration().isNegative()
         || sessionLogPushDetails.attendance().values().stream().anyMatch(Duration::isNegative)) {
       throw new IllegalArgumentException();

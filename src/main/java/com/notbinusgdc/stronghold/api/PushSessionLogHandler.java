@@ -30,6 +30,9 @@ public class PushSessionLogHandler implements Handler {
       try {
         sessionLogService.pushLog(sessionLog);
         ctx.status(HttpStatus.OK);
+      } catch (IllegalArgumentException e) {
+        ctx.status(HttpStatus.BAD_REQUEST);
+        ctx.json(e.getMessage());
       } catch (Exception e) {
         ctx.status(HttpStatus.INTERNAL_SERVER_ERROR);
         ctx.json(e.getMessage());
